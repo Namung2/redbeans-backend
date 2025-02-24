@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/notion")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")  // React 프론트엔드를 위한 CORS 설정
+@CrossOrigin(origins = "https://warm-blini-39cdcb.netlify.app")  // React 프론트엔드를 위한 CORS 설정
 public class NotionController {
 
 /*노션 api에서 데이터 포맷 확인해주는 엔드포인트 안지울테이까 확인 한번씩 해주시고
