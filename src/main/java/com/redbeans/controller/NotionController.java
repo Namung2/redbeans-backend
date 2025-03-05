@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/notion")
+@RequestMapping("/api/notion")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "https://warm-blini-39cdcb.netlify.app")  // React 프론트엔드를 위한 CORS 설정
+@CrossOrigin(origins = "https://warm-blini-39cdcb.netlify.app/api")  // React 프론트엔드를 위한 CORS 설정 https://warm-blini-39cdcb.netlify.app
 public class NotionController {
 
 /*노션 api에서 데이터 포맷 확인해주는 엔드포인트 안지울테이까 확인 한번씩 해주시고
@@ -38,7 +38,7 @@ http://localhost:8080/api/notion/inspect
 */
 
     private final NotionService notionService; // 진짜 api 서비스 오늘 회의 있는지 확인
-    @GetMapping("/events/today")
+    @GetMapping("/api/events/today")
     public ResponseEntity<ApiResponse<List<NotionEventDto>>> getTodayEvents() {
         try{
             List<NotionEventDto> events = notionService.getTodayEvents();

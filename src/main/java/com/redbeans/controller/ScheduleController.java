@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 @RestController
-@RequestMapping("/notion-events") // 이 엔드포인트로 GET 날리기
+@RequestMapping("/api/notion-events") // 이 엔드포인트로 GET 날리기
 @RequiredArgsConstructor
 
 public class ScheduleController {
